@@ -1,0 +1,130 @@
+RewriteEngine on
+
+
+###RewriteRule ^(.*)$ https://ntexpress.sa/billing/index/$1 [L,R=301]
+
+##RewriteRule ^index/?$ index.php [NC,L]
+RewriteRule ^index/?$ login.php [NC,L]
+RewriteRule ^dashboard/?$ dashboard.php [NC,L]
+
+RewriteRule ^case/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)?$ cases.php?fid=$1&id=$2 [NC]
+
+
+RewriteRule ^income-expense-report/?$ income_expense_report.php [NC,L]
+
+RewriteRule ^customer-listing/?$ customer_listing.php [NC,L]
+RewriteRule ^customer-add/?$ customer_add.php [NC,L]
+RewriteRule ^customer-add/([A-Za-z0-9-]+)?$ customer_add.php?id=$1 [NC]
+
+RewriteRule ^agent-login/?$ agent_login.php [NC,L]
+RewriteRule ^agent-listing/?$ agent_listing.php [NC,L]
+RewriteRule ^agent-add/?$ agent_add.php [NC,L]
+RewriteRule ^agent-add/([A-Za-z0-9-]+)?$ agent_add.php?id=$1 [NC]
+
+RewriteRule ^branch-login/?$ branch_login.php [NC,L]
+#RewriteRule ^branch-listing/?$ branch_listing.php [NC,L]
+#RewriteRule ^branch-add/?$ branch_add.php [NC,L]
+#RewriteRule ^branch-add/([A-Za-z0-9-]+)?$ branch_add.php?id=$1 [NC]
+
+RewriteRule ^accountant-login/?$ accountant_login.php [NC,L]
+
+
+
+RewriteRule ^expenses-listing/?$ expenses_listing.php [NC,L]
+RewriteRule ^expenses-add/?$ expenses_add.php [NC,L]
+RewriteRule ^expenses-add/([A-Za-z0-9-]+)?$ expenses_add.php?id=$1 [NC]
+
+RewriteRule ^add-department-expenses/([A-Za-z0-9-]+)?$ agent_expenses_add.php?id=$1 [NC]
+RewriteRule ^add-department-expenses/?$ agent_expenses_add.php [NC,L]
+RewriteRule ^expenses-list/?$ agent_expenses_listing.php [NC,L]
+
+RewriteRule ^shipment-listing/?$ shipment_listing.php [NC,L]
+RewriteRule ^shipment-listing/([A-Za-z0-9-]+)?$ shipment_listing.php?id=$1 [NC]
+RewriteRule ^shipment-add/?$ shipment_add.php [NC,L]
+RewriteRule ^shipment-add/([A-Za-z0-9-]+)?$ shipment_add.php?id=$1 [NC]
+RewriteRule ^shipment-preview/([A-Za-z0-9-]+)?$ shipment_preview.php?id=$1 [NC]
+
+
+RewriteRule ^shipment-list/?$ agent_shipment_listing.php [NC,L]
+RewriteRule ^shipment-list/([A-Za-z0-9-]+)?$ agent_shipment_listing.php?id=$1 [NC]
+RewriteRule ^department-shipment-add/?$ agent_shipment_add.php [NC,L]
+RewriteRule ^department-shipment-add/([A-Za-z0-9-]+)?$ agent_shipment_add.php?id=$1 [NC]
+RewriteRule ^shipment-invoice-preview/([A-Za-z0-9-]+)?$ agent_shipment_preview.php?id=$1 [NC]
+
+
+RewriteRule ^department-listing/?$ department_listing.php [NC,L]
+RewriteRule ^department-add/?$ department_add.php [NC,L]
+RewriteRule ^department-add/([A-Za-z0-9-]+)?$ department_add.php?id=$1 [NC]
+
+
+
+RewriteRule ^staff-listing/?$ staff_listing.php [NC,L]
+RewriteRule ^staff-add/?$ staff_add.php [NC,L]
+RewriteRule ^staff-add/([A-Za-z0-9-]+)?$ staff_add.php?id=$1 [NC]
+RewriteRule ^staff-roles/?$ staff_roles.php [NC,L]
+
+
+RewriteRule ^agent-edit-profile/?$ agent_edit_profile.php [NC,L]
+RewriteRule ^agent-change-password/?$ agent_change_password.php [NC,L]
+
+RewriteRule ^edit-profile/?$ edit_profile.php [NC,L]
+RewriteRule ^change-password/?$ change_password.php [NC,L]
+RewriteRule ^logout/?$ logout.php [NC,L]
+
+RewriteRule ^invoice/?$ allinvoice.php [NC,L]
+RewriteRule ^new-shipment/?$ newshipment.php [NC,L]
+RewriteRule ^new-shipment/([A-Za-z0-9-]+)?$ newshipment.php?id=$1 [NC]
+
+
+RewriteRule ^branch-listing/?$ branch-listing.php [NC,L]
+RewriteRule ^branch-add/?$ branch-add.php [NC,L]
+RewriteRule ^branch-add/([A-Za-z0-9-]+)?$ branch-add.php?id=$1 [NC]
+
+
+RewriteRule ^staff-login/?$ staff_login.php [NC,L]
+
+RewriteRule ^payment-terms-condition/?$ payment_terms_condition.php [NC,L]
+RewriteRule ^payment-terms-condition-add/?$ payment_terms_condition_add.php [NC,L]
+RewriteRule ^payment-terms-condition-add/([A-Za-z0-9-]+)?$ payment_terms_condition_add.php?id=$1 [NC]
+
+RewriteRule ^vendor-listing/?$ vendor_listing.php [NC,L]
+RewriteRule ^vendor-add/?$ vendor_add.php [NC,L]
+RewriteRule ^vendor-add/([A-Za-z0-9-]+)?$ vendor_add.php?id=$1 [NC]
+
+RewriteRule ^bill-listing/?$ bill_listing.php [NC,L]
+RewriteRule ^bill-add/?$ bill_add.php [NC,L]
+RewriteRule ^bill-add/([A-Za-z0-9-]+)?$ bill_add.php?id=$1 [NC]
+
+RewriteRule ^shipment-tracking/?$ shipmenttracking.php [NC,L]
+
+RewriteRule ^record-expense-listing/?$ record_expense_listing.php [NC,L]
+RewriteRule ^record-expense-add/?$ record_expense_add.php [NC,L]
+RewriteRule ^record-expense-add/([A-Za-z0-9-]+)?$ record_expense_add.php?id=$1 [NC]
+
+RewriteRule ^expense-type-listing/?$ expense_type_listing.php [NC,L]
+RewriteRule ^expense-type-add/?$ expense_type_add.php [NC,L]
+RewriteRule ^expense-type-add/([A-Za-z0-9-]+)?$ expense_type_add.php?id=$1 [NC]
+
+
+# DISABLE CACHING
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
+
+<FilesMatch "\.(css|flv|gif|htm|html|ico|jpe|jpeg|jpg|js|mp3|mp4|png|pdf|swf|txt)$">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header unset Pragma
+        Header unset Cache-Control
+        Header unset Last-Modified
+        Header set Pragma "no-cache"
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>

@@ -1,0 +1,11 @@
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 2
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 2
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 2
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(query.php): failed to open stream: No such file or directory in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 3
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(query.php): failed to open stream: No such file or directory in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 3
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  include(): Failed opening 'query.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 3
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 41
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 43
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 52
+[07-Aug-2020 13:23:33 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 55
+[07-Aug-2020 18:53:52 Asia/Kolkata] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/thewpa6f/public_html/ntexpress/datatables-dynamic/1.php on line 42
